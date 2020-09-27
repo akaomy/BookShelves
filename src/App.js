@@ -18,7 +18,7 @@ export default function App () {
 
     return (
         <>
-            {loading ? <p>Loading, please wait</p> : ''}
+            {loading ? '' : <p>Loading, please wait</p>}
             <AllBooks books={books}/>
         </>
     )

@@ -1,7 +1,6 @@
 import React from 'react'
 import BookShelf from './BookShelf'
 
-
 class AllBooks extends React.Component {
   state = {
     showSearchPage: false

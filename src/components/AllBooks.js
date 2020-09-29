@@ -52,7 +52,7 @@ class AllBooks extends React.Component {
             : 
             <div>
               <div className="list-books-title">
-                <h1>MyReads</h1>
+                <h1>My Book Shelves</h1>
               </div>
               <div className="list-books-content">
                 <div>

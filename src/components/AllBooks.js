@@ -1,5 +1,6 @@
-import React from 'react'
-import BookShelf from './BookShelf'
+import React from 'react';
+import BookShelf from './BookShelf';
+import Button from '@material-ui/core/Button';
 
 class AllBooks extends React.Component {
   state = {
@@ -67,7 +68,12 @@ class AllBooks extends React.Component {
                 </div>
               </div>
               <div className="open-search">
-                <button onClick={() => this.onButtonClick()}>Add a book</button>
+                <Button
+                  variant="contained" 
+                  color="primary" 
+                  onClick={() => this.onButtonClick()}>
+                    Add a book
+                </Button>
               </div>
             </div>
             }

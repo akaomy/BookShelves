@@ -11,7 +11,7 @@ export default function App () {
     useEffect(() => {
         BooksAPI.getAll()
         .then((books) => {
-            setBooks({ books },
+            setBooks(() => ({ books }),
             setLoading({ loading: false }))
         })
         .catch(error => console.log(error))    
@@ -20,7 +20,7 @@ export default function App () {
     return (
         <>
             {loading ? '' : <p>Loading, please wait</p>}
-            <AllBooks books={books}/>
+            <AllBooks allBooks={books}/>
         </>
     )
 }

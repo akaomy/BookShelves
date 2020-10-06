@@ -57,12 +57,14 @@ class AllBooks extends React.Component {
               <div className="list-books-content">
                 <div>
                 {this.bookShelfTitles.map( item => {
-                  return <BookShelf key={item.id} name={item.book} />
+                  return (
+                    <BookShelf 
+                      key={item.id} 
+                      title={item.book} 
+                    />
+                  )
                 })}
-                {/* {this.books.map(item => {
-                  return <li>{item.name}</li>
-                })} */}
-                  </div>
+                </div>
               </div>
               <div className="open-search">
                 <button onClick={() => this.onButtonClick()}>Add a book</button>

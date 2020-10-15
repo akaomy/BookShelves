@@ -2,6 +2,7 @@ import React from 'react';
 import BookShelf from './BookShelf';
 import Button from '@material-ui/core/Button';
 import 'fontsource-roboto';
+import AddIcon from '@material-ui/icons/Add';
 
 class AllBooks extends React.Component {
   state = {
@@ -70,6 +71,11 @@ class AllBooks extends React.Component {
               </div>
               <div className="open-search">
                 <Button
+                  startIcon={<AddIcon />}
+                  style={{
+                    fontSize: '20px'
+                  }}
+                  size="large"
                   variant="contained" 
                   color="primary" 
                   onClick={() => this.onButtonClick()}>

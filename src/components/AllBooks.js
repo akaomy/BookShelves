@@ -4,7 +4,7 @@ import 'fontsource-roboto';
 import ButtonGroup from '@material-ui/core/ButtonGroup';
 import Button from '@material-ui/core/Button';
 import AddIcon from '@material-ui/icons/Add';
-import DeleteIcon from '@material-ui/icons/Delete';
+import EditIcon from '@material-ui/icons/Edit';
 
 class AllBooks extends React.Component {
   state = {
@@ -82,19 +82,19 @@ class AllBooks extends React.Component {
                     variant="contained" 
                     color="primary" 
                     onClick={() => this.onButtonClick()}>
-                      Add a book
+                      Add new
                   </Button>
                   {/* this button will trigger edit mode */}
                   {/* todo: add checkboxes for each book in edit mode, 
                   so user can select a book and then click on delete btn */}
                   <Button
-                    startIcon={<DeleteIcon />}
+                    startIcon={<EditIcon />}
                     style={{
                       fontSize: '20px'
                     }}
                     color="secondary"
                   >
-                    Delete a book
+                    Edit Shelves
                   </Button>
                   </ButtonGroup>
               </div>
